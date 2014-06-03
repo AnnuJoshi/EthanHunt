@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My App</title>
+    <title>Ethan Hunt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="app.min.css">
     <style>
@@ -12,22 +12,33 @@
   <body>
     <div class="app-page" data-page="home">
       <div class="app-topbar">
-        <div class="app-title">Home page</div>
+        <div class="app-title">Ethan Hunt</div>
       </div>
       <div class="app-content">
         <div class="app-section">
-          <div class="app-button" data-target="page2">Go to Page 2</div>
+          <div class="app-button" data-target="challanges">Challanges</div>
+          <div class="app-button" data-target="winners">Winners</div>
         </div>
       </div>
     </div>
 
-    <div class="app-page" data-page="page2">
+    <div class="app-page" data-page="challanges">
       <div class="app-topbar">
         <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page 2</div>
+        <div class="app-title">Challanges</div>
       </div>
       <div class="app-content">
-        Page 2 is lonely
+        Challanges List
+      </div>
+    </div>
+
+    <div class="app-page" data-page="winners">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Winners</div>
+      </div>
+      <div class="app-content">
+        Winners List
       </div>
     </div>
 
@@ -39,6 +50,10 @@
       });
 
       App.controller('page2', function (page) {
+        // put stuff here
+      });
+
+      App.controller('page3', function (page) {
         // put stuff here
       });
 
